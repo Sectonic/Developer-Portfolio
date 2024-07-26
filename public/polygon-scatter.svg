@@ -1,0 +1,34 @@
+<svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+  <g>
+    <g transform="translate(40 164)">
+        <path d="M0 -16L13.9 -8L13.9 8L0 16L-13.9 8L-13.9 -8Z" fill="#2563eb">
+            <animate attributeName="fill" values="#2563eb;#7dd3fc;#2563eb" dur="3s" repeatCount="indefinite" begin="0s" />
+        </path>
+    </g>
+    <g transform="translate(250 32)">
+        <path d="M0 -16L13.9 -8L13.9 8L0 16L-13.9 8L-13.9 -8Z" fill="#7dd3fc">
+            <animate attributeName="fill" values="#7dd3fc;#2563eb;#7dd3fc" dur="3s" repeatCount="indefinite" begin="2s" />
+        </path>
+    </g>
+    <g transform="translate(220 309)">
+        <path d="M0 -18L15.6 -9L15.6 9L0 18L-15.6 9L-15.6 -9Z" fill="#2563eb">
+            <animate attributeName="fill" values="#2563eb;#7dd3fc;#2563eb" dur="3s" repeatCount="indefinite" begin="1s" />
+        </path>
+    </g>
+    <g transform="translate(594 40)">
+        <path d="M0 -16L13.9 -8L13.9 8L0 16L-13.9 8L-13.9 -8Z" fill="#2563eb">
+            <animate attributeName="fill" values="#2563eb;#7dd3fc;#2563eb" dur="3s" repeatCount="indefinite" begin="1s" />
+        </path>
+    </g>
+    <g transform="translate(710 234)">
+        <path d="M0 -19L16.5 -9.5L16.5 9.5L0 19L-16.5 9.5L-16.5 -9.5Z" fill="#7dd3fc">
+            <animate attributeName="fill" values="#7dd3fc;#2563eb;#7dd3fc" dur="3s" repeatCount="indefinite" begin="1s" />
+        </path>
+    </g>
+    <g transform="translate(843 50)">
+        <path d="M0 -15L13 -7.5L13 7.5L0 15L-13 7.5L-13 -7.5Z" fill="#2563eb">
+            <animate attributeName="fill" values="#2563eb;#7dd3fc;#2563eb" dur="3s" repeatCount="indefinite" begin="2s" />
+        </path>
+    </g>
+  </g>
+</svg>
