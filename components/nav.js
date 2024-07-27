@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const Nav = () => {
@@ -25,7 +26,7 @@ const Nav = () => {
             className="fixed top-0 left-0 w-full py-4 flex justify-between items-center px-4 z-50"
         >
             <img src="/logo.png" className="w-14 h-14"/>
-            <div className="transition cursor-pointer bg-white hover:bg-blue-500 hover:text-white text-slate-950 font-medium py-2 px-7 rounded-full max-w-max">Resume</div>
+            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="transition cursor-pointer bg-white hover:bg-blue-500 hover:text-white text-slate-950 font-medium py-2 px-7 rounded-full max-w-max">Resume</Link>
         </motion.div>
     )
 }

@@ -78,12 +78,12 @@ function Hero({ pageLoad, setPageLoad, children }) {
   }, []);
  
   return (
-    <div className="bg-slate-950 h-screen mb-1 w-full overflow-x-hidden">
+    <div className="bg-slate-950 h-[100lvh] mb-1 w-full overflow-x-hidden">
         <motion.div
           className="absolute m-auto left-0 right-0 flex flex-col items-center w-[300px] origin-top z-10"
           animate={swingControls}
         >
-          <motion.div animate={wireControls} className="relative w-[4px] h-[40vh] bg-gray-800 z-10"></motion.div>
+          <motion.div animate={wireControls} className="relative w-[4px] h-[40lvh] bg-gray-800 z-10"></motion.div>
           <div className="flex flex-col justify-evenly items-center w-[30px] bg-gray-700 aspect-[4/5] rounded-[1px] z-20">
             <div className="bg-gray-800 w-[34px] h-[3px] z-30"></div>
             <div className="bg-gray-800 w-[34px] h-[3px] z-30"></div>
@@ -101,7 +101,7 @@ function Hero({ pageLoad, setPageLoad, children }) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.5, transition: { duration: 1 } }}
               exit={{ opacity: 0 }}
-              className="cursor-default absolute -translate-x-1/2 left-1/2 top-[57.5vh] z-10 flex items-center justify-center gap-1 text-gray-100"
+              className="cursor-default absolute -translate-x-1/2 left-1/2 top-[57.5lvh] z-10 flex items-center justify-center gap-1 text-gray-100"
             >
               <svg className="-mt-1 fill-gray-200 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="m15.5,3h-2.5V0h-2v3h-2.5c-2.481,0-4.5,2.019-4.5,4.5v8.5c0,4.411,3.589,8,8,8s8-3.589,8-8V7.5c0-2.481-2.019-4.5-4.5-4.5Zm0,2c1.379,0,2.5,1.122,2.5,2.5v2.5h-5v-5h2.5Zm-7,0h2.5v5h-5v-2.5c0-1.378,1.122-2.5,2.5-2.5Zm3.5,17c-3.309,0-6-2.691-6-6v-4h12v4c0,3.309-2.691,6-6,6Z"/>
