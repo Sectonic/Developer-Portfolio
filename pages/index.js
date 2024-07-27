@@ -73,13 +73,13 @@ export default function Home() {
             />
           </div>
           <InViewDiv
-            className="pt-32 md:pt-40 text-5xl text-slate-200 max-md:mx-10 text-left md:text-center cursor-default font-bold"
+            className="pt-8 md:pt-16 text-5xl text-slate-200 max-md:mx-10 text-left md:text-center cursor-default font-bold"
             threshold={.9}
             translateX={-50}
           >
             Some Of My Skills
           </InViewDiv>
-          <div className='overflow-hidden mx-auto mt-20 lg:mt-40 h-[350px] w-[350px] min-[450px]:w-[440px] min-[450px]:h-[440px] md:h-[530px] md:w-[530px]'>
+          <div className='overflow-hidden-x mx-auto mt-20 lg:mt-40 h-[350px] w-[200px] min-[450px]:w-[300px] min-[450px]:h-[440px] md:h-[530px] md:w-[400px]'>
             <SkillsCircle />
           </div>
           <InViewDiv
