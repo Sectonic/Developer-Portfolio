@@ -79,7 +79,9 @@ export default function Home() {
           >
             Some Of My Skills
           </InViewDiv>
-          <SkillsCircle />
+          <div className='overflow-hidden mx-auto mt-20 lg:mt-40 h-[350px] w-[350px] min-[450px]:w-[440px] min-[450px]:h-[440px] md:h-[530px] md:w-[530px]'>
+            <SkillsCircle />
+          </div>
           <InViewDiv
             className="mt-20 lg:mt-40 text-5xl text-slate-200 max-md:mx-10 text-left md:text-center cursor-default font-bold"
             threshold={.9}

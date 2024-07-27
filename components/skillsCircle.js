@@ -68,7 +68,7 @@ const SkillsCircle = () => {
     return (
         <motion.div
             ref={ref}
-            className="relative mt-20 lg:mt-40 w-full h-[350px] min-[450px:]h-[440px] md:h-[530px]"
+            className="mx-auto relative w-full h-full"
             animate={ inView ? { rotate: 360 } : {}}
             transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
         >
