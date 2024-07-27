@@ -78,7 +78,7 @@ function Hero({ pageLoad, setPageLoad, children }) {
   }, []);
  
   return (
-    <div className="bg-slate-950 h-svh mb-1 w-full overflow-x-hidden">
+    <div className="hero_height bg-slate-950 h-svh mb-1 w-full overflow-x-hidden">
         <motion.div
           className="absolute m-auto left-0 right-0 flex flex-col items-center w-[300px] origin-top z-10"
           animate={swingControls}
