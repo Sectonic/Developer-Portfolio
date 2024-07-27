@@ -18,6 +18,13 @@ body {
   scrollbar-color: transparent transparent;
 }
 
+.hero_height {
+  height: 100svh;
+  height: -moz-available;
+  height: -webkit-fill-available;
+  height: fill-available;
+}
+
 .grecaptcha-badge { 
   visibility: hidden;
 }

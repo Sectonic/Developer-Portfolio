@@ -123,7 +123,7 @@ function Hero({ pageLoad, setPageLoad, children }) {
         >
         </motion.div>
         { pageLoad && (
-          <div className="w-full absolute text-center -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
+          <div className="w-full absolute text-center -translate-x-1/2 -translate-y-1/2 max-[1000px]:top-[52.5%] left-1/2 top-1/2">
             { children }
           </div>
         ) }
