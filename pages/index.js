@@ -79,7 +79,7 @@ export default function Home() {
           >
             Some Of My Skills
           </InViewDiv>
-          <div className='overflow-hidden-x mx-auto mt-20 lg:mt-40 h-[350px] w-[200px] min-[450px]:w-[300px] min-[450px]:h-[440px] md:h-[530px] md:w-[400px]'>
+          <div className='overflow-hidden mx-auto mt-20 lg:mt-40 h-[350px] w-[350px] min-[450px]:w-[440px] min-[450px]:h-[440px] md:h-[530px] md:w-[530px]'>
             <SkillsCircle />
           </div>
           <InViewDiv
