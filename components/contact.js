@@ -47,7 +47,7 @@ const ContactForm = () => {
     });
 
     return (
-        <form className="mt-20 w-[500px] h-[410px] overflow-hidden m-auto flex flex-col justify-start items-end gap-3" onSubmit={formSubmit} ref={ref}>
+        <form className="mt-10 lg:mt-20 max-md:px-10 md:w-[500px] h-[420px] md:h-[404px] overflow-hidden m-auto flex flex-col justify-start items-end gap-3" onSubmit={formSubmit} ref={ref}>
             <AnimatePresence>
                 { status == "" | status == "loading" && inView && (
                     <>

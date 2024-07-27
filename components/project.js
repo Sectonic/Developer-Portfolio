@@ -11,16 +11,16 @@ const Project = ({ src, title, tags, github, live, children, delay = 0 }) => {
     return (
         <motion.div 
             ref={ref}
-            className="group w-[600px] basis-1/2 mr-2"
+            className="group max-md:px-10 w-full md:w-[600px] xl:w-[500px] 2xl:w-[600px] basis-1/2 mr-2"
             initial={{ opacity: 0, translateY: -50 }}
             animate={inView ? { opacity: 1, translateY: 0 } : {}}
             transition={{ delay: delay }}
         >
-            <a href={live} target="_blank" rel="noopener noreferrer" className="block cursor-pointer relative w-full h-[350px] rounded-lg overflow-hidden">
+            <a href={live} target="_blank" rel="noopener noreferrer" className="block cursor-pointer relative w-full md:h-[350px] xl:h-[292px] 2xl:h-[350px] rounded-lg overflow-hidden">
                 <div className="transition absolute w-full h-full bg-blue-600/45 group-hover:bg-transparent z-20"></div>
                 <img src={src} className="transition grayscale group-hover:grayscale-0 w-full h-full" />
             </a>
-            <div className="relative -mt-[60px] ml-5 w-full h-[145px] bg-gray-900 z-20 rounded-lg p-4">
+            <div className="relative -mt-[40px] md:-mt-[60px] ml-5 w-full md:h-[145px] bg-gray-900 z-20 rounded-lg p-4">
                 <div className="flex justify-between items-center">
                     <div className="transition text-lg font-semibold text-slate-300 group-hover:text-cyan-100">{title}</div>
                     <div className="flex justify-center items-center gap-1">

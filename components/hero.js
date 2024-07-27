@@ -38,11 +38,11 @@ function Hero({ pageLoad, setPageLoad, children }) {
         });
         lightControls2.start({
           height: "100%",
-          width: "700px",
+          width: "90%",
           rotate: [0, -.5, .5, -.5, 0],
           transition: {
             height: { duration: .2, ease: "easeInOut" },
-            width: { duration: .2, ease: "easeInOut", delay: .05 },
+            width: { duration: .35, ease: "easeInOut", delay: .05 },
             rotate: { duration: 3, ease: "easeInOut", repeat: Infinity, delay: .65 },
           },
         });
@@ -119,20 +119,20 @@ function Hero({ pageLoad, setPageLoad, children }) {
         <motion.div 
           initial={{ height: 0, width: 0, rotate: 0 }}
           animate={lightControls2}
-          className={`origin-top absolute w-full h-full m-auto left-0 right-0 top-0 bg-gradient-to-b from-blue-500/75 to-blue-500/10 [clip-path:polygon(50%_100px,48%_100px,0%_100%,100%_100%,52%_100px)]`}
+          className={`origin-top absolute max-w-[700px] w-full h-full m-auto left-0 right-0 top-0 bg-gradient-to-b from-blue-500/75 to-blue-500/10 [clip-path:polygon(50%_100px,48%_100px,0%_100%,100%_100%,52%_100px)]`}
         >
         </motion.div>
         { pageLoad && (
-          <div className="relative text-center" style={{marginTop: '16rem'}}>
+          <div className="w-full absolute text-center -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
             { children }
           </div>
         ) }
-        <div className="absolute -bottom-28 left-0 w-full">
+        <div className="absolute -bottom-28 left-0 w-full overflow-hidden">
           { pageLoad && (
             <motion.svg 
               initial={{ opacity: 0, translateY: 200 }}
               animate={{ opacity: 1, translateY: 0, transition: { duration: .25 } }}
-              className="w-full transition-all" 
+              className="m-auto min-w-[1000px] transition-all" 
               xmlns="http://www.w3.org/2000/svg" 
               xmlnsXlink="http://www.w3.org/1999/xlink" 
               id="visual" 

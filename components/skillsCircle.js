@@ -30,16 +30,16 @@ const SkillLine = ({ currentIndex, name, url }) => {
       <div>
         <motion.div
           ref={scope}
-          className="absolute top-0 bottom-0 left-0 right-0 m-auto transform border-b border-slate-600"
+          className="absolute max-w-[120px] min-[500px]:max-w-[150px] md:max-w-[200px] top-0 bottom-0 left-0 right-0 m-auto transform border-b border-slate-600"
           style={{
             transform: `rotate(${rotateAngle}deg) translate(-50%, -50%)`,
           }}
           initial={{ width: 0, height: 0 }}
-          animate={{ width: 200 }}
-          transition={{ duration: 0.1, delay: currentIndex * 0.075, ease: 'easeInOut' }}
+          animate={{ width: "100%" }}
+          transition={{ duration: 0.25, delay: currentIndex * 0.075, ease: 'easeInOut' }}
         >
           <motion.div 
-            className='flex flex-col justify-center items-center gap-1 w-[100px] h-[50px] cursor-pointer absolute right-[70%] top-full -translate-x-1/2 -translate-y-1/2 transform'
+            className='flex flex-col justify-center items-center gap-1 w-[100px] h-[50px] cursor-pointer absolute right-[35%] min-[500px]:right-[55%] md:right-[70%] top-full -translate-x-1/2 -translate-y-1/2 transform'
             initial={{ '--tw-rotate': (imageRotationAngle) + 'deg', opacity: 0 }}
             animate={{ '--tw-rotate': (imageRotationAngle - 360) + 'deg', opacity: 1 }}
             transition={{ 
@@ -50,8 +50,8 @@ const SkillLine = ({ currentIndex, name, url }) => {
             onHoverEnd={() => animate(scope.current, { borderColor: '#475569' })}
             onClick={() => openInNewTab(url)}
           >
-            <img className='w-10 h-10' src={`/skillIcons/${name}.svg`} />
-            <div className='text-slate-100 text-center'>{ name == 'Csharp' ? 'C#' : name }</div>
+            <img className='w-5 h-5 min-[500px]:w-6 min-[500px]:h-6 md:w-10 md:h-10' src={`/skillIcons/${name}.svg`} />
+            <div className='text-xs min-[500px]:text-sm md:text-base text-slate-100 text-center'>{ name == 'Csharp' ? 'C#' : name }</div>
           </motion.div>
         </motion.div>
       </div>
@@ -68,7 +68,7 @@ const SkillsCircle = () => {
     return (
         <motion.div
             ref={ref}
-            className="relative mt-28 w-full h-[600px]"
+            className="relative mt-20 lg:mt-40 w-full h-[350px] min-[450px:]h-[440px] md:h-[530px]"
             animate={ inView ? { rotate: 360 } : {}}
             transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
         >

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import Hero from '@/components/hero';
 import { useInView } from 'react-intersection-observer';
 import SkillsCircle from '@/components/skillsCircle';
@@ -13,6 +13,11 @@ const mukta = Mukta({ subsets: ["latin"], weight: ['200', '300', '400', '500', '
 
 export default function Home() {
   const [pageLoad, setPageLoad] = useState(false);
+  const contactRef = useRef(null);
+
+  const goToContact = () => {
+    contactRef.current.scrollIntoView({ behavior: 'smooth' });
+  }
 
   const bgView = useInView({ 
     triggerOnce: true,
@@ -24,30 +29,31 @@ export default function Home() {
       {pageLoad && <Nav/>}
       <Hero pageLoad={pageLoad} setPageLoad={setPageLoad}>
         <motion.div 
-          initial={{ opacity: 0, translateY: -25 }}
+          initial={{ opacity: 0, translateY: -20 }}
           animate={{ opacity: 1, translateY: 0, transition: { duration: .25, delay: .35 } }}
-          className="text-9xl font-bold cursor-default"
+          className="text-8xl sm:text-9xl font-bold cursor-default max-md:text-left leading-[1.125] mx-10"
         >
-          Sujal Dhakal
+          Sujal <br className='md:hidden' /> Dhakal
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, translateY: -10 }}
+          animate={{ opacity: 1, translateY: 0, transition: { duration: .25, delay: .45 } }}
+          className="md:m-auto text-center max-w-[400px] md:w-[275px] cursor-default max-md:text-left max-md:mx-10"
+        >
+          I'm a software engineer experienced in web, mobile, and game development studying at Georgia Tech
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { delay: .45 } }}
-          className="m-auto text-center w-[300px] cursor-default"
-        >
-          I'm passionate about two things: <br/> Coding and Caves.
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { delay: .55 } }}
-          className="cursor-pointer mt-4 border-2 border-white bg-transparent transition hover:bg-white hover:text-slate-950 text-white font-medium py-3 px-9 rounded-full max-w-max m-auto"
+          animate={{ opacity: 1, transition: { duration: .25, delay: .55 } }}
+          className="cursor-pointer mt-6 border-2 border-white bg-transparent transition hover:bg-white hover:text-slate-950 text-white font-medium py-3 px-9 rounded-full max-w-max max-md:mx-10 md:mx-auto"
+          onClick={goToContact}
         >
           Contact Me
         </motion.div>
         <motion.svg 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { delay: .75, duration: 1 } }}
-          className="mt-16 m-auto w-6 h-6 fill-white animate-bounce" 
+          className="max-md:hidden mt-16 m-auto w-6 h-6 fill-white animate-bounce" 
           xmlns="http://www.w3.org/2000/svg" 
           viewBox="0 0 24 24"
         >
@@ -56,15 +62,17 @@ export default function Home() {
       </Hero>
       {pageLoad && (
         <div className='relative'>
-          <motion.img 
-            ref={bgView.ref}
-            src='/polygon-scatter.svg' 
-            className='top-60 absolute w-full' 
-            initial={{ opacity: 0, top: '11rem' }}
-            animate={bgView.inView ? { opacity: 1, top: '13rem' } : {}}
-          />
+          <div className='top-60 absolute w-full overflow-hidden'>
+            <motion.img 
+              ref={bgView.ref}
+              src='/polygon-scatter.svg' 
+              className='min-w-[1300px] w-full' 
+              initial={{ opacity: 0, top: '11rem' }}
+              animate={bgView.inView ? { opacity: 1, top: '13rem' } : {}}
+            />
+          </div>
           <InViewDiv
-            className="pt-44 text-5xl text-slate-200 text-center cursor-default font-bold"
+            className="pt-32 md:pt-40 text-5xl text-slate-200 max-md:mx-10 text-left md:text-center cursor-default font-bold"
             threshold={.9}
             translateX={-50}
           >
@@ -72,19 +80,26 @@ export default function Home() {
           </InViewDiv>
           <SkillsCircle />
           <InViewDiv
-            className="pt-40 text-5xl text-slate-200 text-center cursor-default font-bold"
+            className="mt-20 lg:mt-40 text-5xl text-slate-200 max-md:mx-10 text-left md:text-center cursor-default font-bold"
             threshold={.9}
             translateX={-50}
           >
-            My Favorite Projects
+            Selected Projects
           </InViewDiv>
-          <div className='max-w-max grid grid-cols-2 gap-12 mt-40 m-auto'>
+          <InViewDiv
+            className="max-md:mx-10 md:m-auto pt-2 text-slate-300 text-left md:text-center cursor-default max-w-96"
+            threshold={.9}
+            translateX={50}
+          >
+            These are my favorite projects I've created that show what I'm capable of.
+          </InViewDiv>
+          <div className='max-w-max flex flex-col max-xl:justify-center max-xl:items-center xl:grid xl:grid-cols-2 gap-12 mt-14 lg:mt-28 m-auto'>
             <Project 
               src="/images/pa.png" 
               title="Personality Academy"
               github="https://github.com/Sectonic/pa"
               live="https://personality.academy"
-              tags={["NextJS", "SupaBase", "Vercel", "Stripe", "OAuth", "ImageKit"]}
+              tags={["NextJS", "SupaBase", "Stripe", "OAuth", "ImageKit", "Vercel"]}
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, modi facilis libero magnam sint voluptatem fuga alias.
             </Project>
@@ -93,7 +108,7 @@ export default function Home() {
               title="Check-In"
               github="https://github.com/Sectonic/Check-In"
               live="https://check-iin.vercel.app/"
-              tags={["NextJS", "Socket.IO", "Tailwind", "SupaBase", "Vercel"]}
+              tags={["NextJS", "SupaBase", "Socket.IO", "Tailwind", "Vercel"]}
               delay={.2}
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, modi facilis libero magnam sint voluptatem fuga alias.
@@ -112,28 +127,30 @@ export default function Home() {
               title="HitchHikr"
               github="https://github.com/CSYA-Web/csya-website"
               live="https://csya-edu.org"
-              tags={["React Native", "Firebase", "Stripe", "Expo", "Socket.IO"]}
+              tags={["React Native", "Flask", "Neon", "Socket.IO", "Stripe", "Expo"]}
               delay={.2}
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, modi facilis libero magnam sint voluptatem fuga alias.
             </Project>
           </div>
           <InViewDiv
-            className="pt-40 text-5xl text-slate-200 text-center cursor-default font-bold"
+            className="pt-20 lg:pt-40 text-5xl text-slate-200 max-md:mx-10 text-left md:text-center cursor-default font-bold"
             threshold={.9}
             translateX={-50}
           >
-            Get In Touch
+            <div ref={contactRef}>
+              Get In Touch
+            </div>
           </InViewDiv>
           <InViewDiv
-            className="m-auto pt-2 text-slate-300 text-center cursor-default max-w-96"
+            className="max-md:mx-10 md:m-auto pt-2 text-slate-300 text-left md:text-center cursor-default max-w-96"
             threshold={.9}
             translateX={50}
           >
             Don't hesitate to reach out if you have a question about my projects or want to work with me.
           </InViewDiv>
           <InViewDiv
-            className="mt-5 flex justify-center items-center gap-5"
+            className="max-md:mx-10 mt-5 flex md:justify-center items-center gap-5"
             threshold={.9}
             translateY={-50}
           >
