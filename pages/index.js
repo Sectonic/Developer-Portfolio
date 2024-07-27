@@ -73,7 +73,7 @@ export default function Home() {
             />
           </div>
           <InViewDiv
-            className="pt-8 md:pt-16 text-5xl text-slate-200 max-md:mx-10 text-left md:text-center cursor-default font-bold"
+            className="pt-32 md:pt-40 text-5xl text-slate-200 max-md:mx-10 text-left md:text-center cursor-default font-bold"
             threshold={.9}
             translateX={-50}
           >
