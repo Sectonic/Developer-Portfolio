@@ -79,7 +79,7 @@ export default function Home() {
           >
             Some Of My Skills
           </InViewDiv>
-          <div className='overflow-hidden mx-auto mt-20 lg:mt-40 h-[350px] w-[350px] min-[450px]:w-[440px] min-[450px]:h-[440px] md:h-[530px] md:w-[530px]'>
+          <div className='overflow-hidden mx-auto mt-20 lg:mt-40 h-[370px] w-[350px] min-[460px]:w-[440px] min-[460px]:h-[440px] md:h-[550px] md:w-[530px]'>
             <SkillsCircle />
           </div>
           <InViewDiv
@@ -126,10 +126,9 @@ export default function Home() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, modi facilis libero magnam sint voluptatem fuga alias.
             </Project>
             <Project 
-              src="/images/csya.png" 
+              src="/images/hitchhikr.png" 
               title="HitchHikr"
-              github="https://github.com/CSYA-Web/csya-website"
-              live="https://csya-edu.org"
+              github="https://github.com/Sectonic/HitchHikr"
               tags={["React Native", "Flask", "Neon", "Socket.IO", "Stripe", "Expo"]}
               delay={.2}
             >
