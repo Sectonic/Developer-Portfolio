@@ -104,7 +104,7 @@ export default function Home() {
               live="https://personality.academy"
               tags={["NextJS", "SupaBase", "Stripe", "OAuth", "ImageKit", "Vercel"]}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, modi facilis libero magnam sint voluptatem fuga alias.
+              A website for learning and interacting with personality theory. Includes course trees, type database, personality algorithm, and donations.
             </Project>
             <Project 
               src="/images/checkin.png" 
@@ -114,16 +114,15 @@ export default function Home() {
               tags={["NextJS", "SupaBase", "Socket.IO", "Tailwind", "Vercel"]}
               delay={.2}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, modi facilis libero magnam sint voluptatem fuga alias.
+              A web app for automating attendance management. Uses custom QR codes and IDs to automatically detect events present for you to attend.
             </Project>
             <Project 
               src="/images/medieval_markets.png" 
               title="Medieval Markets"
-              github="https://github.com/Sectonic/pa"
-              live="https://personality.academy"
-              tags={["C#", "Unity", "Photoshop", "Steam"]}
+              github="https://github.com/Sectonic/Medieval-Markets"
+              tags={["C#", "Unity", "Photoshop"]}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, modi facilis libero magnam sint voluptatem fuga alias.
+              Procedurally generated game where the objective is to develop and sell resources in an island during the medieval ages.
             </Project>
             <Project 
               src="/images/hitchhikr.png" 
@@ -132,7 +131,7 @@ export default function Home() {
               tags={["React Native", "Flask", "Neon", "Socket.IO", "Stripe", "Expo"]}
               delay={.2}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, modi facilis libero magnam sint voluptatem fuga alias.
+              A mobile app for dynamic carpooling. Integrates drives where carpoolers can join and leave the driver route to reach their destinations.
             </Project>
           </div>
           <InViewDiv
