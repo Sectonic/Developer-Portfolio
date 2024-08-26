@@ -101,7 +101,7 @@ export default function Home() {
               src="/images/pa.png" 
               title="Personality Academy"
               github="https://github.com/Sectonic/pa"
-              live="https://personality.academy"
+              live="https://personalityacademy.vercel.app"
               tags={["NextJS", "SupaBase", "Stripe", "OAuth", "ImageKit", "Vercel"]}
             >
               A website for learning and interacting with personality theory. Includes course trees, type database, personality algorithm, and donations.
