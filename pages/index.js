@@ -158,7 +158,7 @@ export default function Home() {
             <Link href='mailto:hello@sujaldhakal.dev' target='_blank' rel='noopener noreferrer'>
               <svg className='transition cursor-pointer w-8 h-8 fill-slate-500 hover:fill-blue-200' viewBox="0 0 24 24" ><path d="M12,0A12.013,12.013,0,0,0,0,12c-.126,9.573,11.159,15.429,18.9,9.817a1,1,0,1,0-1.152-1.634C11.3,24.856,1.9,19.978,2,12,2.549-1.266,21.453-1.263,22,12v2a2,2,0,0,1-4,0V12C17.748,4.071,6.251,4.072,6,12a6.017,6.017,0,0,0,10.52,3.933A4,4,0,0,0,24,14V12A12.013,12.013,0,0,0,12,0Zm0,16a4,4,0,0,1,0-8A4,4,0,0,1,12,16Z"/></svg>
             </Link>
-            <Link href='https://www.linkedin.com/in/sujal-dhakal/' target='_blank' rel='noopener noreferrer'>
+            <Link href='https://www.linkedin.com/in/sujald/' target='_blank' rel='noopener noreferrer'>
               <svg className='transition cursor-pointer w-8 h-8 fill-slate-500 hover:fill-blue-200' viewBox="0 0 128 128">
                 <path d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3zM39.17 107H21.06V48.73h18.11zm-9-66.21a10.5 10.5 0 1110.49-10.5 10.5 10.5 0 01-10.54 10.48zM107 107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53V48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75z"></path>
               </svg>
