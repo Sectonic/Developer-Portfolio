@@ -41,7 +41,7 @@ export default function Home() {
           animate={{ opacity: 1, translateY: 0, transition: { duration: .25, delay: .45 } }}
           className="md:m-auto text-center max-w-[400px] md:w-[275px] cursor-default max-md:text-left max-md:mx-10"
         >
-          I'm a software engineer experienced in web, mobile, and game development studying at Georgia Tech
+          I'm an aspiring software engineer experienced in web, mobile, and game development studying Computer Science at Georgia Tech
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
