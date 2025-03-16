@@ -79,7 +79,7 @@ export default function Home() {
           >
             Some Of My Skills
           </InViewDiv>
-          <div className='overflow-hidden mx-auto mt-20 lg:mt-40 h-[370px] w-[350px] min-[460px]:w-[440px] min-[460px]:h-[440px] md:h-[550px] md:w-[530px]'>
+          <div className='overflow-hidden mx-auto mt-20 lg:mt-40 h-[370px] w-[350px] min-[460px]:w-[440px] min-[460px]:h-[440px] md:h-[550px] md:w-[550px]'>
             <SkillsCircle />
           </div>
           <InViewDiv
@@ -87,14 +87,7 @@ export default function Home() {
             threshold={.9}
             translateX={-50}
           >
-            Selected Projects
-          </InViewDiv>
-          <InViewDiv
-            className="max-md:mx-10 md:m-auto pt-2 text-slate-300 text-left md:text-center cursor-default max-w-96"
-            threshold={.9}
-            translateX={50}
-          >
-            These are my favorite projects I've created that show what I'm capable of.
+            Things I've Worked On
           </InViewDiv>
           <div className='max-w-max flex flex-col max-xl:justify-center max-xl:items-center xl:grid xl:grid-cols-2 gap-12 mt-14 lg:mt-28 m-auto'>
             <Project 
@@ -102,24 +95,40 @@ export default function Home() {
               title="Personality Academy"
               github="https://github.com/Sectonic/pa"
               live="https://personalityacademy.vercel.app"
-              tags={["NextJS", "SupaBase", "Stripe", "OAuth", "ImageKit", "Vercel"]}
+              tags={["JavaScript", "NextJS", "CSS", "SupaBase", "Prisma", "Stripe", "Vercel", "GCP", "Git"]}
             >
-              A website for learning and interacting with personality theory. Includes course trees, type database, personality algorithm, and donations.
+              Learning and interacting with personality theory. Includes course trees, type database, personality algorithm, and donations.
             </Project>
-            <Project 
+            <Project
               src="/images/checkin.png" 
               title="Check-In"
-              github="https://github.com/Sectonic/Check-In"
-              live="https://check-iin.vercel.app/"
-              tags={["NextJS", "SupaBase", "Socket.IO", "Tailwind", "Vercel"]}
+              github="https://github.com/Sectonic/Check-In?tab=readme-ov-file#check-in-preview"
+              tags={["JavaScript", "NextJS", "TailwindCSS", "SupaBase", "Prisma", "Socket.IO", "Vercel", "Git"]}
               delay={.2}
             >
-              A web app for automating attendance management. Uses custom QR codes and IDs to automatically detect events present for you to attend.
+              Automating attendance management. Uses custom QR codes and IDs to automatically detect events present for you to attend.
+            </Project>
+            <Project 
+              src="/images/csya.png" 
+              title="Computer Science Youth of America"
+              live="https://csya-edu.org"
+              tags={["TypeScript", "NextJS", "TailwindCSS", "Wix Headless", "Sheets Api", "Vercel", "Git"]}
+            >
+              Hub for the 501(c) non-profit Computer Science Youth of America. Integrates dynamic courses, blogs, and form management.
+            </Project>
+            <Project 
+              src="/images/nique.png" 
+              title="Technique Newspaper"
+              live="https://nique-test.vercel.app"
+              tags={["JavaScript", "NextJS", "TailwindCSS", "Wordpress CMS", "Vercel", "Git"]}
+              delay={.2}
+            >
+              Website for Georgia Tech's student newspaper organization, "Technique". Migration from previous wordpress website builder implementation to NextJS.
             </Project>
             <Project 
               src="/images/medieval_markets.png" 
               title="Medieval Markets"
-              github="https://github.com/Sectonic/Medieval-Markets"
+              github="https://github.com/Sectonic/Medieval-Markets?tab=readme-ov-file#medieval-markets"
               tags={["C#", "Unity", "Photoshop"]}
             >
               Procedurally generated game where the objective is to develop and sell resources in an island during the medieval ages.
@@ -127,8 +136,8 @@ export default function Home() {
             <Project 
               src="/images/hitchhikr.png" 
               title="HitchHikr"
-              github="https://github.com/Sectonic/HitchHikr"
-              tags={["React Native", "Flask", "Neon", "Socket.IO", "Stripe", "Expo"]}
+              github="https://github.com/Sectonic/HitchHikr?tab=readme-ov-file#hitchhikr"
+              tags={["Javascript", "Python", "React Native", "Flask", "Neon", "Socket.IO", "Stripe", "Expo"]}
               delay={.2}
             >
               A mobile app for dynamic carpooling. Integrates drives where carpoolers can join and leave the driver route to reach their destinations.
@@ -140,7 +149,7 @@ export default function Home() {
             translateX={-50}
           >
             <div ref={contactRef}>
-              Get In Touch
+              Get In Touch :{')'}
             </div>
           </InViewDiv>
           <InViewDiv
@@ -148,7 +157,7 @@ export default function Home() {
             threshold={.9}
             translateX={50}
           >
-            Don't hesitate to reach out if you have a question about my projects or want to work with me.
+            Don't hesitate to reach out if you have a question about my projects or want to work with me! 
           </InViewDiv>
           <InViewDiv
             className="max-md:mx-10 mt-5 flex md:justify-center items-center gap-5"

@@ -4,26 +4,27 @@ import { motion } from "framer-motion";
 import openInNewTab from '@/utls/newTab';
 
 const skills = {
-    'HTML': 'https://developer.mozilla.org/en-US/docs/Web/HTML',
-    'CSS': 'https://developer.mozilla.org/en-US/docs/Web/CSS',
-    'Javascript': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-    'NodeJS': 'https://nodejs.org/',
-    'React': 'https://reactjs.org/',
-    'NextJS': 'https://nextjs.org/',
-    'Python': 'https://www.python.org/',
-    'Flask': 'https://flask.palletsprojects.com/',
-    'Django': 'https://www.djangoproject.com/',
-    'PostgreSQL': 'https://www.postgresql.org/',
-    'Java': 'https://www.oracle.com/java/',
-    'Csharp': 'https://docs.microsoft.com/en-us/dotnet/csharp/',
-    'Unity': 'https://unity.com/',
-    'Git': 'https://git-scm.com/',
-    'PHP': 'https://www.php.net/'
+  'HTML': 'https://developer.mozilla.org/en-US/docs/Web/HTML',
+  'CSS': 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+  'Javascript': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+  'Typescript': 'https://www.typescriptlang.org',
+  'NodeJS': 'https://nodejs.org/',
+  'React': 'https://reactjs.org/',
+  'NextJS': 'https://nextjs.org/',
+  'Python': 'https://www.python.org/',
+  'Flask': 'https://flask.palletsprojects.com/',
+  'Django': 'https://www.djangoproject.com/',
+  'PostgreSQL': 'https://www.postgresql.org/',
+  'MongoDB': 'https://www.mongodb.com',
+  'Java': 'https://www.oracle.com/java/',
+  'Csharp': 'https://docs.microsoft.com/en-us/dotnet/csharp/',
+  'Git': 'https://git-scm.com/',
+  'PHP': 'https://www.php.net/'
 };
 
-const SkillLine = ({ currentIndex, name, url }) => {
+const SkillLine = ({ currentIndex, name, url, size }) => {
     const [scope, animate] = useAnimate();
-    const rotateAngle = currentIndex * 24;
+    const rotateAngle = currentIndex * (360 / size);
     const imageRotationAngle = 360 - rotateAngle;
   
     return (
@@ -73,7 +74,7 @@ const SkillsCircle = () => {
             transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
         >
             {inView && Object.entries(skills).map(([name, url], i) => (
-                <SkillLine key={i} name={name} url={url} currentIndex={i} />
+                <SkillLine key={i} name={name} url={url} currentIndex={i} size={Object.keys(skills).length} />
             ))}
         </motion.div>
     )

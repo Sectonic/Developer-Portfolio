@@ -61,6 +61,7 @@ const ContactForm = () => {
                             whileFocus={{ borderColor: '#3b82f6' }}
                             exit={{ opacity: 0  }}
                             type="text"
+                            autocomplete="off"
                             required
                         />
                         <motion.input 
@@ -73,6 +74,7 @@ const ContactForm = () => {
                             whileFocus={{ borderColor: '#3b82f6' }}
                             exit={{ opacity: 0  }}
                             type="email"
+                            autocomplete="off"
                             required
                         />
                         <motion.textarea 
@@ -84,6 +86,7 @@ const ContactForm = () => {
                             animate={{ opacity: 1, translateY: 0, transition: { delay: .30 + (initiallyStarted ? .5 : 0) } }}
                             whileFocus={{ borderColor: '#3b82f6' }}
                             exit={{ opacity: 0 }}
+                            autocomplete="off"
                             required
                         />
                         <motion.div 
