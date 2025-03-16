@@ -103,6 +103,7 @@ export default function Home() {
               src="/images/checkin.png" 
               title="Check-In"
               github="https://github.com/Sectonic/Check-In?tab=readme-ov-file#check-in-preview"
+              live="https://check--in.vercel.app"
               tags={["JavaScript", "NextJS", "TailwindCSS", "SupaBase", "Prisma", "Socket.IO", "Vercel", "Git"]}
               delay={.2}
             >
