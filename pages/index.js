@@ -99,12 +99,30 @@ export default function Home() {
             >
               Learning and interacting with personality theory. Includes course trees, type database, personality algorithm, and donations.
             </Project>
+            <Project 
+              src="/images/ican.png" 
+              title="iCAN"
+              github="https://github.com/GTBitsOfGood/ican"
+              live="https://main--bog-ican.netlify.app"
+              tags={["TypeScript", "NextJS", "TailwindCSS", "Mongoose", "Zod", "Netlify", "Git"]}
+              delay={.2}
+            >
+              Web-based application that gamifies medication adherence for children. Developed alongside Georgia Tech's Bits of Good organization.
+            </Project>
+            <Project 
+              src="/images/nique.png" 
+              title="Technique Newspaper"
+              live="https://nique-test.vercel.app"
+              tags={["JavaScript", "NextJS", "TailwindCSS", "Wordpress CMS", "Vercel", "Git"]}
+            >
+              Website for Georgia Tech's student newspaper organization, "Technique". Migration from previous wordpress website builder implementation to NextJS.
+            </Project>
             <Project
               src="/images/checkin.png" 
               title="Check-In"
               github="https://github.com/Sectonic/Check-In?tab=readme-ov-file#check-in-preview"
               live="https://check--in.vercel.app"
-              tags={["JavaScript", "NextJS", "TailwindCSS", "SupaBase", "Prisma", "Socket.IO", "Vercel", "Git"]}
+              tags={["JavaScript", "NextJS", "TailwindCSS", "Neon", "Prisma", "Socket.IO", "Vercel", "Git"]}
               delay={.2}
             >
               Automating attendance management. Uses custom QR codes and IDs to automatically detect events present for you to attend.
@@ -116,23 +134,6 @@ export default function Home() {
               tags={["TypeScript", "NextJS", "TailwindCSS", "Wix Headless", "Sheets Api", "Vercel", "Git"]}
             >
               Hub for the 501(c) non-profit Computer Science Youth of America. Integrates dynamic courses, blogs, and form management.
-            </Project>
-            <Project 
-              src="/images/nique.png" 
-              title="Technique Newspaper"
-              live="https://nique-test.vercel.app"
-              tags={["JavaScript", "NextJS", "TailwindCSS", "Wordpress CMS", "Vercel", "Git"]}
-              delay={.2}
-            >
-              Website for Georgia Tech's student newspaper organization, "Technique". Migration from previous wordpress website builder implementation to NextJS.
-            </Project>
-            <Project 
-              src="/images/medieval_markets.png" 
-              title="Medieval Markets"
-              github="https://github.com/Sectonic/Medieval-Markets?tab=readme-ov-file#medieval-markets"
-              tags={["C#", "Unity", "Photoshop"]}
-            >
-              Procedurally generated game where the objective is to develop and sell resources in an island during the medieval ages.
             </Project>
             <Project 
               src="/images/hitchhikr.png" 
