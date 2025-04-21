@@ -96,3 +96,12 @@ body {
     opacity: 1;
   }
 }
+
+.left-gradient-border {
+  border-left: 1.5px solid;
+  border-image: linear-gradient(
+    to bottom,
+    theme(colors.blue.500) var(--end, 60%),
+    theme(colors.slate.800) var(--end, 100%)
+  ) 1 100%;
+}
