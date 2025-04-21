@@ -5,7 +5,6 @@ import SkillsCircle from '@/components/skillsCircle';
 import { motion } from 'framer-motion';
 import Nav from '@/components/nav';
 import InViewDiv from '@/components/inViewDiv';
-import Project from '@/components/project';
 import ContactForm from '@/components/contact';
 import { Mukta } from "next/font/google";
 import Link from 'next/link';
@@ -28,7 +27,7 @@ export default function Home() {
   });
 
   return (
-    <div className={mukta.className} >
+    <div className={`${mukta.className} overflow-x-hidden`}>
       {pageLoad && <Nav/>}
       <Hero pageLoad={pageLoad} setPageLoad={setPageLoad}>
         <motion.div 

@@ -91,10 +91,10 @@ const ExperienceContainer = () => {
     const labels = ["Bits of Good", "Technique Newspaper", "Personality Academy", "Comp. Sci. Youth of America"];
 
     return (
-        <div className="mt-28 flex justify-center items-start gap-3">
+        <div className="mt-14 lg:mt-28 flex flex-col lg:flex-row justify-center items-start gap-3">
             <InViewDiv
-                className="flex flex-col gap-3 pr-3 py-2 left-gradient-border relative"
-                style={{
+                className="flex max-lg:mx-auto max-[827px]:px-10 max-[827px]:w-full max-lg:max-w-max max-lg:overflow-x-scroll lg:flex-col justify-start gap-3 pr-3 py-2 left-gradient-border relative"
+                style={{ 
                     '--end': ((experienceIdx + 1)/experiences.length * 100) + "%"
                 }}
                 threshold={.5}
@@ -107,7 +107,7 @@ const ExperienceContainer = () => {
                             (idx === experienceIdx
                                 ? "bg-blue-500 text-white"
                                 : "hover:bg-slate-800 bg-slate-900 text-slate-300"
-                            ) + "transition duration-300 px-4 py-1.5 rounded-r-full cursor-pointer"
+                            ) + " transition duration-300 px-4 py-1.5 max-lg:rounded-full lg:rounded-r-full cursor-pointer whitespace-nowrap flex-shrink-0"
                         }
                         onClick={() => setExperienceIdx(idx)}
                         threshold={.5}
@@ -118,7 +118,7 @@ const ExperienceContainer = () => {
                     </InViewDiv>
                 ))}
             </InViewDiv>
-            <div className="w-[600px] min-h-[420px] py-2 px-3 flex flex-col gap-8">
+            <div className="max-lg:mx-auto max-w-[600px] min-h-[420px] py-2 px-10 lg:px-3 flex flex-col gap-8">
                 {experiences[experienceIdx]}
             </div>
         </div>
