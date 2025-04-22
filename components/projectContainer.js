@@ -3,6 +3,15 @@ import Project from "./project"
 const ProjectContainer = () => (
     <div className='max-w-max flex flex-col max-xl:justify-center max-xl:items-center xl:grid xl:grid-cols-2 gap-12 mt-14 lg:mt-28 m-auto'>
         <Project
+            src="/images/dan.png" 
+            title="Dementia Assistance Network"
+            github="https://github.com/Sectonic/DAN"
+            tags={["TypeScript", "Python", "React Native", "Flask", "Firebase", "TensorFlow", "Expo", "Git"]}
+            delay={.2}
+        >
+            A mobile integration with wearable technology that tracks agitation of people with Dementia and proactively plays meaningful music to calm them.
+        </Project>
+        <Project
             src="/images/checkin.png" 
             title="Check-In"
             github="https://github.com/Sectonic/Check-In?tab=readme-ov-file#check-in-preview"
@@ -11,15 +20,6 @@ const ProjectContainer = () => (
             delay={.2}
         >
             Automating attendance management. Uses custom QR codes and IDs to automatically detect events present for you to attend.
-        </Project>
-        <Project
-            src="/images/dan.png" 
-            title="Dementia Assistance Network"
-            github="https://github.com/Sectonic/DAN"
-            tags={["TypeScript", "Python", "React Native", "Flask", "Firebase", "TensorFlow", "Expo", "Git"]}
-            delay={.2}
-        >
-            A mobile integration with wearable technology that tracks agitation of people with Dementia and proactively plays meaningful music to calm them.
         </Project>
         <Project 
             src="/images/hitchhikr.png" 
