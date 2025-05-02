@@ -5,7 +5,7 @@ const ProjectContainer = () => (
         <Project
             src="/images/dan.png" 
             title="Dementia Assistance Network"
-            github="https://github.com/Sectonic/DAN"
+            github="https://github.com/Sectonic/DAN?tab=readme-ov-file#dementia-assistance-network-dan"
             tags={["TypeScript", "Python", "React Native", "Flask", "Firebase", "TensorFlow", "Expo", "Git"]}
             delay={.2}
         >
@@ -14,7 +14,7 @@ const ProjectContainer = () => (
         <Project
             src="/images/checkin.png" 
             title="Check-In"
-            github="https://github.com/Sectonic/Check-In?tab=readme-ov-file#check-in-preview"
+            github="https://github.com/Sectonic/Check-In"
             live="https://check--in.vercel.app"
             tags={["JavaScript", "NextJS", "TailwindCSS", "Neon", "Prisma", "Socket.IO", "Vercel", "Git"]}
             delay={.2}
