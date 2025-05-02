@@ -48,7 +48,7 @@ const ExperienceContainer = () => {
             key={3}
             title="Co-Founder"
             company="Personality Academy"
-            dates="August 2020 – August 2024"
+            dates="September 2022 – August 2024"
             attachments={[
                 { src: "/images/pa.png", title: "Website", href: "https://personalityacademy.vercel.app" }
             ]}
