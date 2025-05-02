@@ -31,7 +31,7 @@ const ExperienceContainer = () => {
             company="Technique Newspaper"
             dates="November 2024 – Present"
             attachments={[
-                { src: "/images/nique.png", title: "Website", href: "https://nique-test.vercel.app" }
+                { src: "/images/nique.png", title: "Website", href: "https://wp.nique.net" }
             ]}
         >
             <div className="text-slate-300">
