@@ -10,60 +10,54 @@ const ExperienceContainer = () => {
             key={0}
             title="Software Developer for iCAN"
             company="Bits of Good"
-            dates="January 2025 – Present"
+            dates="Jan. 2025 – Present"
             attachments={[
                 { src: "/images/ican.png", title: "iCAN", href: "https://main--bog-ican.netlify.app" }
             ]}
         >
             <div className="text-slate-300">
-                Refactored the backend from raw MongoDB to Mongoose, <strong>restructuring 10 micro-services and 23 API endpoints</strong>, enhancing maintainability and type safety.
+                Accelerated new feature development by <strong>25%</strong> by migrating the backend from raw MongoDB to Mongoose, <strong>refactoring 10 services and 23 API endpoints</strong> to enforce type safety and improve long-term code maintainability.
             </div>
             <div className="text-slate-300">
-                Built a multi-screen medication management system in NextJS and TailwindCSS, <strong>creating 17 reusable components</strong> and integrating Zod for user validation, <strong>reducing input errors by 60%</strong>.
+                Engineered full-stack medication management feature using Next.js and TailwindCSS, architecting 17 reusable React components and implementing schema-based validation with Zod, which <strong>decreased user input errors by 60%</strong>.
             </div>
             <div className="text-slate-300">
-                Designed a secure password reset system with NodeJS, Mongoose, and BoG’s internal email tool, streamlining account recovery for users.
+                Developed and deployed a <strong>secure, token-based password reset system</strong> using Node.js and Mongoose, integrating with an internal email API to automate the account recovery process and improve user security.
             </div>
         </Experience>,
         <Experience
             key={1}
             title="Software Developer"
             company="Technique Newspaper"
-            dates="November 2024 – Present"
+            dates="Nov. 2024 – Present"
             attachments={[
                 { src: "/images/nique.png", title: "Website", href: "https://wp.nique.net" }
             ]}
         >
             <div className="text-slate-300">
-                Rebuilt Georgia Tech’s student newspaper website with NextJS and TailwindCSS, replacing WordPress’s builder while maintaining WordPress as a CMS. <strong>Decreased load times by 8000ms and improved SEO rankings.</strong>
+                <strong>Slashed page load time by 80%</strong> (from 10s to &lt;2s) by architecting and deploying a new front-end for Georgia Tech's student newspaper using a headless Next.js system, leading to improved SEO performance and engagement.
             </div>
             <div className="text-slate-300">
-                Engineered a custom service wrapper for the WordPress REST API, <strong>reducing API call redundancy by 55%</strong> through caching and simplifying access to posts, images, authors, and categories.
-            </div>
-            <div className="text-slate-300">
-                Constructed a modular front-end with reusable story components and an optimized search feature.
+                <strong>Reduced backend load and cut API call redundancy by 55%</strong> by engineering a custom service wrapper for the WordPress REST API, implementing an aggressive caching strategy that simplified data fetching.
             </div>
         </Experience>,
         <Experience
             key={3}
             title="Co-Founder"
             company="Personality Academy"
-            dates="September 2022 – August 2024"
+            dates="Sept. 2022 – Aug. 2024"
             attachments={[
                 { src: "/images/pa.png", title: "Website", href: "https://personalityacademy.vercel.app" }
             ]}
         >
             <div className="text-slate-300">
-                Launched a personality education platform <strong>attracting 3,000+ registered users</strong> using NextJS and Supabase with courses, educative tools, and Stripe integration for donations.
+                Co-founded and <strong>scaled an educational platform to over 3,000 users</strong> by developing a full-stack application with Next.js, Supabase, and Prisma; implemented course delivery and a secure donation system via Stripe.
             </div>
             <div className="text-slate-300">
-                Implemented a <strong>custom OAuth system</strong> with Google, Discord, and email validation, utilizing Prisma ORM.
+                Architected and built 'TypeSearch,' a <strong>complex query tool for a database of 2,000+ individuals</strong>, featuring multi-filter search logic and dynamic data visualization for 512 unique types.
             </div>
             <div className="text-slate-300">
-                Developed the TypeSearch tool for <strong>querying 2,000+ typed individuals</strong>, featuring <strong>multi-filter search</strong>, and <strong>dynamic diagrams for 512 unique types</strong> with images managed by ImageKit.
-            </div>
-            <div className="text-slate-300">
-                Created the TypeChart tool, allowing users to explore personality types interactively and generating unique behavioral spectrums from a 10-digit type code.
+                Engineered a <strong>custom authentication system from the ground up</strong>, integrating OAuth 2.0 for Google and Discord alongside secure email/password login, managing user data and sessions with Prisma ORM.
             </div>
         </Experience>,
         <Experience
