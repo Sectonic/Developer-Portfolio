@@ -7,9 +7,17 @@ const ProjectContainer = () => (
             title="Dementia Assistance Network"
             github="https://github.com/Sectonic/DAN?tab=readme-ov-file#dementia-assistance-network-dan"
             tags={["TypeScript", "Python", "React Native", "Flask", "Firebase", "TensorFlow", "Expo", "Git"]}
-            delay={.2}
         >
             A mobile integration with wearable technology that tracks agitation of people with Dementia and proactively plays meaningful music to calm them.
+        </Project>
+        <Project
+            src="/images/DataFly-CLI.png" 
+            title="DataFly CLI"
+            github="https://github.com/Sectonic/DataFly-CLI?tab=readme-ov-file#datafly-cli-ai-powered-relationally-aware-mock-data-generation"
+            tags={["GoLang", "Cobra", "SQL", "LangChain", "BubbleTea", "Git"]}
+            delay={.2}
+        >
+            An intelligent CLI for analyzing SQL schemas and generating realistic, relationally-aware mock data for testing.
         </Project>
         <Project
             src="/images/checkin.png" 
@@ -17,7 +25,6 @@ const ProjectContainer = () => (
             github="https://github.com/Sectonic/Check-In"
             live="https://check--in.vercel.app"
             tags={["JavaScript", "NextJS", "TailwindCSS", "Neon", "Prisma", "Socket.IO", "Vercel", "Git"]}
-            delay={.2}
         >
             Automating attendance management. Uses custom QR codes and IDs to automatically detect events present for you to attend.
         </Project>
@@ -35,7 +42,6 @@ const ProjectContainer = () => (
             title="Medieval Markets"
             github="https://github.com/Sectonic/Medieval-Markets?tab=readme-ov-file#medieval-markets"
             tags={["C#", "Unity", "Aseprite", "Procedural Generation", "DFS Pathfinding", "Game AI"]}
-            delay={.2}
         >
             Top-down pixel-art game where you trade, build, and optimize a medieval economy. Includes Perlin noise terrain, L-system roads, and class-based NPC behaviors.
         </Project>
