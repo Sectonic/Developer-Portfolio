@@ -16,13 +16,13 @@ const ExperienceContainer = () => {
             ]}
         >
             <div className="text-slate-300">
-                Accelerated new feature development by <strong>25%</strong> by migrating the backend from raw MongoDB to Mongoose, <strong>refactoring 10 services and 23 API endpoints</strong> to enforce type safety and improve long-term code maintainability.
+                Replaced MongoDB driver with <strong>Mongoose</strong> in <strong>10 backend services</strong>, adding schema validation and reducing future dev overhead across 23 API endpoints. <strong>Cut feature build time by 25%</strong> by standardizing Mongoose models.
             </div>
             <div className="text-slate-300">
-                Engineered full-stack medication management feature using Next.js and TailwindCSS, architecting 17 reusable React components and implementing schema-based validation with Zod, which <strong>decreased user input errors by 60%</strong>.
+                Built <strong>Next.js</strong> front-end for medication management with <strong>Zod</strong>-based validation to prevent scheduling data conflicts.
             </div>
             <div className="text-slate-300">
-                Developed and deployed a <strong>secure, token-based password reset system</strong> using Node.js and Mongoose, integrating with an internal email API to automate the account recovery process and improve user security.
+                Implemented <strong>JWT-based password reset system</strong> in Node.js with token expiry to safeguard brute force attacks.
             </div>
         </Experience>,
         <Experience
@@ -35,10 +35,13 @@ const ExperienceContainer = () => {
             ]}
         >
             <div className="text-slate-300">
-                <strong>Slashed page load time by 80%</strong> (from 10s to &lt;2s) by architecting and deploying a new front-end for Georgia Tech's student newspaper using a headless Next.js system, leading to improved SEO performance and engagement.
+                <strong>Cut page load by 8s</strong> by replacing WordPress front-end with static-rendered Next.js for Tech's student newspaper.
             </div>
             <div className="text-slate-300">
-                <strong>Reduced backend load and cut API call redundancy by 55%</strong> by engineering a custom service wrapper for the WordPress REST API, implementing an aggressive caching strategy that simplified data fetching.
+                Rebuilt UI/UX with TailwindCSS, increasing <strong>Lighthouse Accessibility and SEO to 96/100</strong>.
+            </div>
+            <div className="text-slate-300">
+                <strong>Reduced API load by 55%</strong> by adding middleware that caches WordPress REST calls and merges frequent fetches.
             </div>
         </Experience>,
         <Experience
@@ -51,13 +54,16 @@ const ExperienceContainer = () => {
             ]}
         >
             <div className="text-slate-300">
-                Co-founded and <strong>scaled an educational platform to over 3,000 users</strong> by developing a full-stack application with Next.js, Supabase, and Prisma; implemented course delivery and a secure donation system via Stripe.
+                Built and launched full-stack educational platform used by <strong>3,000+ users</strong>, with custom course delivery.
             </div>
             <div className="text-slate-300">
-                Architected and built 'TypeSearch,' a <strong>complex query tool for a database of 2,000+ individuals</strong>, featuring multi-filter search logic and dynamic data visualization for 512 unique types.
+                Designed a <strong>multi-filter search for 2,000+ profiles</strong> with dynamic charts and tagged filtering with <strong>512 categories</strong>.
             </div>
             <div className="text-slate-300">
-                Engineered a <strong>custom authentication system from the ground up</strong>, integrating OAuth 2.0 for Google and Discord alongside secure email/password login, managing user data and sessions with Prisma ORM.
+                Developed full <strong>admin dashboard</strong> managing the 2,000 profiles and an additional <strong>13,000+ content items</strong>.
+            </div>
+            <div className="text-slate-300">
+                Integrated ImageKit CDN to <strong>cut image load times by 60%</strong>, supporting 99.9% upkeep during traffic spikes.
             </div>
         </Experience>,
         <Experience
