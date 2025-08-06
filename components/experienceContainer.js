@@ -8,21 +8,19 @@ const ExperienceContainer = () => {
     const experiences = [
         <Experience
             key={0}
-            title="Software Developer for iCAN"
+            title="Software Engineering Manager"
             company="Bits of Good"
             dates="Jan. 2025 – Present"
-            attachments={[
-                { src: "/images/ican.png", title: "iCAN", href: "https://main--bog-ican.netlify.app" }
-            ]}
+            attachments={[]}
         >
             <div className="text-slate-300">
-                Replaced MongoDB driver with <strong>Mongoose</strong> in <strong>10 backend services</strong>, adding schema validation and reducing future dev overhead across 23 API endpoints. <strong>Cut feature build time by 25%</strong> by standardizing Mongoose models.
+                Orchestrated development of supply distribution platform for non-profit Hope For Haiti using <strong>Next.js & Prisma</strong>.
             </div>
             <div className="text-slate-300">
-                Built <strong>Next.js</strong> front-end for medication management with <strong>Zod</strong>-based validation to prevent scheduling data conflicts.
+                Authored <strong>60+ GitHub issues</strong>, reviewed <strong>400+ commits</strong>, and resolved merge conflicts to a team of 5 developers.
             </div>
             <div className="text-slate-300">
-                Implemented <strong>JWT-based password reset system</strong> in Node.js with token expiry to safeguard brute force attacks.
+                Collaborated with designers, PMs, and 6 stakeholders to define a <strong>12-sprint agile plan</strong> for production launch.
             </div>
         </Experience>,
         <Experience
@@ -38,7 +36,7 @@ const ExperienceContainer = () => {
                 <strong>Cut page load by 8s</strong> by replacing WordPress front-end with static-rendered Next.js for Tech's student newspaper.
             </div>
             <div className="text-slate-300">
-                Rebuilt UI/UX with TailwindCSS, increasing <strong>Lighthouse Accessibility and SEO to 96/100</strong>.
+                Rebuilt UI/UX with TailwindCSS and React, increasing <strong>Lighthouse Accessibility and SEO to 96/100</strong>.
             </div>
             <div className="text-slate-300">
                 <strong>Reduced API load by 55%</strong> by adding middleware that caches WordPress REST calls and merges frequent fetches.
