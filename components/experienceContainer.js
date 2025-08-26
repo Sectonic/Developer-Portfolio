@@ -14,7 +14,7 @@ const ExperienceContainer = () => {
             attachments={[]}
         >
             <div className="text-slate-300">
-                Orchestrated development of supply distribution platform for non-profit Hope For Haiti using <strong>Next.js & Prisma</strong>.
+                Orchestrated development of medical distribution platform for <strong>56 facilities</strong> and <strong>100,000+</strong> annual items shipped.
             </div>
             <div className="text-slate-300">
                 Authored <strong>60+ GitHub issues</strong>, reviewed <strong>400+ commits</strong>, and resolved merge conflicts to a team of 5 developers.
