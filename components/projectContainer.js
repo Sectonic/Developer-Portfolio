@@ -3,12 +3,13 @@ import Project from "./project"
 const ProjectContainer = () => (
     <div className='max-w-max flex flex-col max-xl:justify-center max-xl:items-center xl:grid xl:grid-cols-2 gap-12 mt-14 lg:mt-28 m-auto'>
         <Project
-            src="/images/dan.png" 
-            title="Dementia Assistance Network"
-            github="https://github.com/Sectonic/DAN?tab=readme-ov-file#dementia-assistance-network-dan"
-            tags={["TypeScript", "Python", "React Native", "Flask", "Firebase", "TensorFlow", "Expo", "Git"]}
+            src="/images/pa.png" 
+            title="Personality Academy"
+            github="https://github.com/Sectonic/Personality-Academy"
+            live="https://personalityacademy.vercel.app"
+            tags={["JavaScript", "NextJS", "Prisma", "PostgreSQL", "CSS", "ImageKit", "GCP"]}
         >
-            A mobile integration with wearable technology that tracks agitation of people with Dementia and proactively plays meaningful music to calm them.
+            Unfold the spectrum of personality through a scientific perspective.
         </Project>
         <Project
             src="/images/DataFly-CLI.png" 

@@ -8,7 +8,7 @@ const ExperienceContainer = () => {
     const experiences = [
         <Experience
             key={0}
-            title="Software Engineering Manager"
+            title="Engineering Manager"
             company="Bits of Good"
             dates="Jan. 2025 – Present"
             attachments={[]}
@@ -17,17 +17,34 @@ const ExperienceContainer = () => {
                 Orchestrated development of medical distribution platform for <strong>56 facilities</strong> and <strong>100,000+</strong> annual items shipped.
             </div>
             <div className="text-slate-300">
-                Authored <strong>60+ GitHub issues</strong>, reviewed <strong>400+ commits</strong>, and resolved merge conflicts to a team of 5 developers.
+                Automated distribution workflows, reducing manual efforts by <strong>80%</strong> and accelerating inventory lookups from <strong>hours to seconds</strong>, by introducing Azure AI Services with OpenAI models and RAG pipelines.
             </div>
             <div className="text-slate-300">
-                Collaborated with designers, PMs, and 6 stakeholders to define a <strong>12-sprint agile plan</strong> for production launch.
+                Authored <strong>60+ GitHub issues</strong>, reviewed <strong>400+ commits</strong>, and resolved merge conflicts to a team of 5 developers.
             </div>
         </Experience>,
         <Experience
             key={1}
+            title="Undergraduate Researcher"
+            company="Georgia Institute of Technology"
+            dates="Aug. 2024 – Present"
+            attachments={[]}
+        >
+            <div className="text-slate-300">
+                Collected <strong>2.4 million</strong> health metrics from a <strong>4-week study</strong> on <strong>12</strong> Dementia patients to track agitation events.
+            </div>
+            <div className="text-slate-300">
+                Cleaned datapoints to <strong>≥90% completeness</strong> by converting Firebase real-time data to CSVs for Pandas processing.
+            </div>
+            <div className="text-slate-300">
+                Modeled agitation prediction with a <strong>semi-supervised LSTM</strong>, reaching <strong>AUROC [0.87]</strong> on multimodal wearable streams, by applying anomaly detection to partially labeled data using PyTorch and Numpy.
+            </div>
+        </Experience>,
+        <Experience
+            key={2}
             title="Software Developer"
             company="Technique Newspaper"
-            dates="Nov. 2024 – Present"
+            dates="Nov. 2024 – Sept. 2025"
             attachments={[
                 { src: "/images/nique.png", title: "Website", href: "https://wp.nique.net" }
             ]}
@@ -36,57 +53,15 @@ const ExperienceContainer = () => {
                 <strong>Cut page load by 8s</strong> by replacing WordPress front-end with static-rendered Next.js for Tech's student newspaper.
             </div>
             <div className="text-slate-300">
-                Rebuilt UI/UX with TailwindCSS and React, increasing <strong>Lighthouse Accessibility and SEO to 96/100</strong>.
+                Rebuilt UI/UX, increasing <strong>Lighthouse Accessibility and SEO to 96/100</strong>, with TailwindCSS and React.
             </div>
             <div className="text-slate-300">
                 <strong>Reduced API load by 55%</strong> by adding middleware that caches WordPress REST calls and merges frequent fetches.
             </div>
-        </Experience>,
-        <Experience
-            key={3}
-            title="Co-Founder"
-            company="Personality Academy"
-            dates="Sept. 2022 – Aug. 2024"
-            attachments={[
-                { src: "/images/pa.png", title: "Website", href: "https://personalityacademy.vercel.app" }
-            ]}
-        >
-            <div className="text-slate-300">
-                Built and launched full-stack educational platform used by <strong>3,000+ users</strong>, with custom course delivery.
-            </div>
-            <div className="text-slate-300">
-                Designed a <strong>multi-filter search for 2,000+ profiles</strong> with dynamic charts and tagged filtering with <strong>512 categories</strong>.
-            </div>
-            <div className="text-slate-300">
-                Developed full <strong>admin dashboard</strong> managing the 2,000 profiles and an additional <strong>13,000+ content items</strong>.
-            </div>
-            <div className="text-slate-300">
-                Integrated ImageKit CDN to <strong>cut image load times by 60%</strong>, supporting 99.9% upkeep during traffic spikes.
-            </div>
-        </Experience>,
-        <Experience
-            key={2}
-            title="Chief Technology Officer"
-            company="Computer Science Youth of America"
-            companyBreak={true}
-            dates="May 2023 - August 2024"
-            attachments={[
-                { src: "/images/csya.png", title: "Website", href: "https://csya-edu.org" }
-            ]}
-        >
-            <div className="text-slate-300">
-                Developed a modular, scalable web platform using NextJS and TypeScript with Wix Headless CMS, enabling <strong>10+ non-technical contributors to manage dynamic content</strong> without code.
-            </div>
-            <div className="text-slate-300">
-                Architected end-to-end registration flows via the Sheets API, <strong>serving over 950 students with automated forms</strong> across courses, team, and chapter applications.
-            </div>
-            <div className="text-slate-300">
-                Led a team of 14 to secure over <strong>$285K in sponsored scholarships</strong>, mentoring 8 developers and directing full-stack feature development.
-            </div>
         </Experience>
     ];
 
-    const labels = ["Bits of Good", "Technique Newspaper", "Personality Academy", "Comp. Sci. Youth of America"];
+    const labels = ["Bits of Good", "Georgia Tech", "Technique Newspaper"];
 
     return (
         <div className="mt-14 lg:mt-28 flex flex-col lg:flex-row justify-center items-start gap-3">
