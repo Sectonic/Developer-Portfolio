@@ -20,7 +20,7 @@ const Project = ({ src, title, tags, github, live, children, delay = 0 }) => {
         >
             <Link href={live || github} target="_blank" rel="noopener noreferrer" className="block cursor-pointer relative w-full md:h-[350px] xl:h-[292px] 2xl:h-[350px] rounded-lg overflow-hidden">
                 <div className="transition absolute w-full h-full bg-blue-600/45 group-hover:bg-transparent z-20"></div>
-                <Image src={src} alt={title} className="transition grayscale group-hover:grayscale-0 w-full h-full" width={0} height={0} sizes='100vw' />
+                <Image src={src} alt={title} className="transition grayscale group-hover:grayscale-0 w-full h-full object-cover" width={0} height={0} sizes='100vw' />
             </Link>
             <div className="relative -mt-[40px] md:-mt-[60px] ml-5 w-full md:h-[145px] bg-gray-900 z-20 rounded-lg p-4">
                 <div className="flex justify-between items-center">

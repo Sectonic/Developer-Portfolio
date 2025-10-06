@@ -3,22 +3,30 @@ import Project from "./project"
 const ProjectContainer = () => (
     <div className='max-w-max flex flex-col max-xl:justify-center max-xl:items-center xl:grid xl:grid-cols-2 gap-12 mt-14 lg:mt-28 m-auto'>
         <Project
-            src="/images/pa.png" 
-            title="Personality Academy"
-            github="https://github.com/Sectonic/Personality-Academy"
-            live="https://personalityacademy.vercel.app"
-            tags={["JavaScript", "NextJS", "Prisma", "PostgreSQL", "CSS", "ImageKit", "GCP"]}
+            src="/images/cfg.jpeg" 
+            title="JPMorgan Chase Code for Good Project"
+            github="https://github.com/cfgtexas25/Team-3"
+            tags={["TypeScript", "Next.js", "Mastra", "OpenAI", "Twilio", "Socket.IO", "PostgreSQL"]}
         >
-            Unfold the spectrum of personality through a scientific perspective.
+            AI-powered volunteer platform with a proactive SMS agent that automates event discovery and registration.
         </Project>
         <Project
             src="/images/DataFly-CLI.png" 
             title="DataFly CLI"
             github="https://github.com/Sectonic/DataFly-CLI?tab=readme-ov-file#datafly-cli-ai-powered-relationally-aware-mock-data-generation"
             tags={["GoLang", "Cobra", "SQL", "LangChain", "BubbleTea", "Git"]}
-            delay={.2}
         >
             An intelligent CLI for analyzing SQL schemas and generating realistic, relationally-aware mock data for testing.
+        </Project>
+        <Project
+            src="/images/pa.png" 
+            title="Personality Academy"
+            github="https://github.com/Sectonic/Personality-Academy"
+            live="https://personalityacademy.vercel.app"
+            tags={["JavaScript", "NextJS", "Prisma", "PostgreSQL", "CSS", "ImageKit", "GCP"]}
+            delay={.2}
+        >
+            Unfold the spectrum of personality through a scientific perspective.
         </Project>
         <Project
             src="/images/ican.png" 

@@ -31,13 +31,13 @@ const ExperienceContainer = () => {
             attachments={[]}
         >
             <div className="text-slate-300">
-                Collected <strong>2.4 million</strong> health metrics from a <strong>4-week study</strong> on <strong>12</strong> Dementia patients to track agitation events.
+                Preprocessed <strong>2.4 million</strong> biometric data points from Apple HealthKit using Pandas, cleaned into time-series data.
             </div>
             <div className="text-slate-300">
-                Cleaned datapoints to <strong>≥90% completeness</strong> by converting Firebase real-time data to CSVs for Pandas processing.
+                Achieved <strong>91% accuracy</strong> with a semi-supervised LSTM model in PyTorch, predicting health abnormalities.
             </div>
             <div className="text-slate-300">
-                Modeled agitation prediction with a <strong>semi-supervised LSTM</strong>, reaching <strong>AUROC [0.87]</strong> on multimodal wearable streams, by applying anomaly detection to partially labeled data using PyTorch and Numpy.
+                Developed Swift app that streams health data via Firebase to the model for monitoring, alerts, and automations.
             </div>
         </Experience>,
         <Experience
@@ -53,7 +53,7 @@ const ExperienceContainer = () => {
                 <strong>Cut page load by 8s</strong> by replacing WordPress front-end with static-rendered Next.js for Tech's student newspaper.
             </div>
             <div className="text-slate-300">
-                Rebuilt UI/UX, increasing <strong>Lighthouse Accessibility and SEO to 96/100</strong>, with TailwindCSS and React.
+                Increased Lighthouse Accessibility and SEO to <strong>96/100</strong> by rebuilding the UI/UX with TailwindCSS and React.
             </div>
             <div className="text-slate-300">
                 <strong>Reduced API load by 55%</strong> by adding middleware that caches WordPress REST calls and merges frequent fetches.

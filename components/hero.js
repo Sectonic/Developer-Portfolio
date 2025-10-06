@@ -113,13 +113,21 @@ function Hero({ pageLoad, setPageLoad, children }) {
         <motion.div 
           initial={{ height: 0, width: 0, rotate: 0 }}
           animate={lightControls1}
-          className={`origin-top absolute w-full h-full m-auto left-0 right-0 top-0 bg-gradient-to-b from-blue-500/75 to-blue-500/10 [clip-path:polygon(50%_100px,48%_100px,0%_100%,100%_100%,52%_100px)]`}
+          className="origin-top absolute w-full h-full m-auto left-0 right-0 top-0"
+          style={{ 
+            clipPath: 'polygon(50% 100px, 48% 100px, 0% 100%, 100% 100%, 52% 100px)',
+            background: 'linear-gradient(to bottom, rgba(59, 130, 246, 0.75), rgba(59, 130, 246, 0.1))'
+          }}
         >
         </motion.div>
         <motion.div 
           initial={{ height: 0, width: 0, rotate: 0 }}
           animate={lightControls2}
-          className={`origin-top absolute max-w-[700px] w-full h-full m-auto left-0 right-0 top-0 bg-gradient-to-b from-blue-500/75 to-blue-500/10 [clip-path:polygon(50%_100px,48%_100px,0%_100%,100%_100%,52%_100px)]`}
+          className="origin-top absolute max-w-[700px] w-full h-full m-auto left-0 right-0 top-0"
+          style={{ 
+            clipPath: 'polygon(50% 100px, 48% 100px, 0% 100%, 100% 100%, 52% 100px)',
+            background: 'linear-gradient(to bottom, rgba(59, 130, 246, 0.75), rgba(59, 130, 246, 0.1))'
+          }}
         >
         </motion.div>
         { pageLoad && (
