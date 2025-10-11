@@ -9,18 +9,21 @@ const ExperienceContainer = () => {
         <Experience
             key={0}
             title="Engineering Manager"
-            company="Bits of Good"
+            company="Bits of Good — Hack4Impact Chapter"
             dates="Jan. 2025 – Present"
             attachments={[]}
         >
             <div className="text-slate-300">
-                Orchestrated development of medical distribution platform for <strong>56 facilities</strong> and <strong>100,000+</strong> annual items shipped.
+                Orchestrated development of a medical distribution platform serving <strong>56 facilities</strong> and <strong>$50M+</strong> in annual supplies.
             </div>
             <div className="text-slate-300">
-                Automated distribution workflows, reducing manual efforts by <strong>80%</strong> and accelerating inventory lookups from <strong>hours to seconds</strong>, by introducing Azure AI Services with OpenAI models and RAG pipelines.
+                Re-architected a Next.js + React codebase, refactoring <strong>170+ files</strong> into a modular controller–service–repository architecture and reusable hooks/providers, enabling rapid feature delivery for an 8-person team.
             </div>
             <div className="text-slate-300">
-                Authored <strong>60+ GitHub issues</strong>, reviewed <strong>400+ commits</strong>, and resolved merge conflicts to a team of 5 developers.
+                Reduced manual effort by <strong>80%</strong> by automating distribution workflows via GPT-5, Azure, and RAG pipelines.
+            </div>
+            <div className="text-slate-300">
+                Authored <strong>60+ GitHub issues</strong>, reviewed <strong>400+ commits</strong>, and resolved conflicts while mentoring developers.
             </div>
         </Experience>,
         <Experience
