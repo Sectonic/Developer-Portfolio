@@ -4,22 +4,24 @@ import { motion } from "framer-motion";
 import openInNewTab from '@/utls/newTab';
 
 const skills = {
-  'HTML': 'https://developer.mozilla.org/en-US/docs/Web/HTML',
-  'CSS': 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+  'Python': 'https://www.python.org/',
   'Javascript': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
   'Typescript': 'https://www.typescriptlang.org',
-  'NodeJS': 'https://nodejs.org/',
+  'Java': 'https://www.oracle.com/java/',
   'React': 'https://reactjs.org/',
   'NextJS': 'https://nextjs.org/',
-  'Python': 'https://www.python.org/',
+  'NodeJS': 'https://nodejs.org/',
   'Flask': 'https://flask.palletsprojects.com/',
   'Django': 'https://www.djangoproject.com/',
-  'PostgreSQL': 'https://www.postgresql.org/',
-  'MongoDB': 'https://www.mongodb.com',
-  'Java': 'https://www.oracle.com/java/',
-  'Csharp': 'https://docs.microsoft.com/en-us/dotnet/csharp/',
+  'PyTorch': 'https://pytorch.org/',
+  'Pandas': 'https://pandas.pydata.org/',
+  'AWS': 'https://aws.amazon.com/',
   'Git': 'https://git-scm.com/',
-  'PHP': 'https://www.php.net/'
+  'Docker': 'https://www.docker.com/',
+  'MongoDB': 'https://www.mongodb.com',
+  'PostgreSQL': 'https://www.postgresql.org/',
+  'Csharp': 'https://docs.microsoft.com/en-us/dotnet/csharp/',
+  'Unity': 'https://unity.com/'
 };
 
 const SkillLine = ({ currentIndex, name, url, size }) => {
