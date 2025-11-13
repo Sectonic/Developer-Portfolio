@@ -3,6 +3,15 @@ import Project from "./project"
 const ProjectContainer = () => (
     <div className='max-w-max flex flex-col max-xl:justify-center max-xl:items-center xl:grid xl:grid-cols-2 gap-12 mt-14 lg:mt-28 m-auto'>
         <Project
+            src="/images/cimic.jpeg" 
+            title="Cimic, AI ATL Hackathon Winner"
+            github="https://github.com/Sectonic/Ai-ATL-25"
+            live="https://devpost.com/software/cimic"
+            tags={["React", "Rust", "Azure", "LangChain", "Python", "Pandas", "Tailwind"]}
+        >
+            Simulate urban policy and watch cities react in real-time. Interact with constituents and observe the impact of your decisions.
+        </Project>
+        <Project
             src="/images/cfg.jpeg" 
             title="JPMorgan Chase Code for Good Project"
             github="https://github.com/cfgtexas25/Team-3"
