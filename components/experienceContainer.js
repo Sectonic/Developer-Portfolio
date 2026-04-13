@@ -8,9 +8,26 @@ const ExperienceContainer = () => {
     const experiences = [
         <Experience
             key={0}
+            title="Software Engineering Intern"
+            company="Phia"
+            dates="Jan. 2026 – Present"
+            attachments={[]}
+        >
+            <div className="text-slate-300">
+                Consolidated product workflows across <strong>7,000+ brands</strong> and a <strong>300M-item</strong> catalog by building a unified CMS of editorials, products, and coupons in Next.js, accelerating content operations by <strong>7×</strong>.
+            </div>
+            <div className="text-slate-300">
+                Powered personalized recommendations for <strong>300+ brands</strong> with an LLM pipeline that parsed <strong>1M users'</strong> browsing history into attribute profiles and a K-means model clustering users into <strong>12 cohorts per brand</strong>.
+            </div>
+            <div className="text-slate-300">
+                Boosted extension click-through rate by <strong>40%</strong> and price-drop adoption by <strong>110%</strong> by shipping new product discovery and conversion features.
+            </div>
+        </Experience>,
+        <Experience
+            key={1}
             title="Engineering Manager"
             company="Bits of Good — Hack4Impact Chapter"
-            dates="Jan. 2025 – Present"
+            dates="Jan. 2025 – Jan. 2026"
             attachments={[]}
         >
             <div className="text-slate-300">
@@ -27,10 +44,10 @@ const ExperienceContainer = () => {
             </div>
         </Experience>,
         <Experience
-            key={1}
+            key={2}
             title="Undergraduate Researcher"
             company="Georgia Institute of Technology"
-            dates="Aug. 2024 – Present"
+            dates="Aug. 2024 – Jan. 2026"
             attachments={[]}
         >
             <div className="text-slate-300">
@@ -44,7 +61,7 @@ const ExperienceContainer = () => {
             </div>
         </Experience>,
         <Experience
-            key={2}
+            key={3}
             title="Software Developer"
             company="Technique Newspaper"
             dates="Nov. 2024 – Sept. 2025"
@@ -64,7 +81,7 @@ const ExperienceContainer = () => {
         </Experience>
     ];
 
-    const labels = ["Bits of Good", "Georgia Tech", "Technique Newspaper"];
+    const labels = ["Phia", "Bits of Good", "Georgia Tech", "Technique Newspaper"];
 
     return (
         <div className="mt-14 lg:mt-28 flex flex-col lg:flex-row justify-center items-start gap-3">

@@ -3,7 +3,24 @@ import Project from "./project"
 const ProjectContainer = () => (
     <div className='max-w-max flex flex-col max-xl:justify-center max-xl:items-center xl:grid xl:grid-cols-2 gap-12 mt-14 lg:mt-28 m-auto'>
         <Project
-            src="/images/cimic.jpeg" 
+            src="/images/orca.jpg"
+            title="Orca, HackIllinois Grand Prize Winner"
+            live="https://devpost.com/software/orca-net"
+            tags={["TypeScript", "Next.js", "Python", "FastAPI", "React Three Fiber", "Modal", "OpenClaw"]}
+        >
+            A 3D world-model pipeline that simulates fire scenarios on real buildings using Google Street View and World Labs, orchestrated by multi-agent reasoning on Modal.
+        </Project>
+        <Project
+            src="/images/terrawatt.jpg"
+            title="TerraWatt, EnergyHacks Overall Winner"
+            live="https://devpost.com/software/the-test-test"
+            tags={["TypeScript", "Next.js", "Google Earth Engine", "Gemini", "ElevenLabs", "Auth0", "RAG"]}
+            delay={.2}
+        >
+            A digital twin that models solar feasibility across 879M+ acres of farmland, with a voice-first analytics layer that turns soil and weather data into CAPEX, kWh, and payback in minutes.
+        </Project>
+        <Project
+            src="/images/cimic.jpeg"
             title="Cimic, AI ATL Hackathon Winner"
             github="https://github.com/Sectonic/Ai-ATL-25"
             live="https://devpost.com/software/cimic"

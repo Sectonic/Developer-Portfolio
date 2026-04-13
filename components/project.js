@@ -13,7 +13,7 @@ const Project = ({ src, title, tags, github, live, children, delay = 0 }) => {
     return (
         <motion.div 
             ref={ref}
-            className="group max-md:px-10 w-full md:w-[600px] xl:w-[500px] 2xl:w-[600px] basis-1/2 mr-2"
+            className="group max-md:px-10 w-full md:w-[600px] xl:w-[500px] 2xl:w-[600px] basis-1/2 mr-2 flex flex-col"
             initial={{ opacity: 0, translateY: -50 }}
             animate={inView ? { opacity: 1, translateY: 0 } : {}}
             transition={{ delay: delay, ease: "easeInOut" }}
@@ -22,7 +22,7 @@ const Project = ({ src, title, tags, github, live, children, delay = 0 }) => {
                 <div className="transition absolute w-full h-full bg-blue-600/45 group-hover:bg-transparent z-20"></div>
                 <Image src={src} alt={title} className="transition grayscale group-hover:grayscale-0 w-full h-full object-cover" width={0} height={0} sizes='100vw' />
             </Link>
-            <div className="relative -mt-[40px] md:-mt-[60px] ml-5 w-full md:h-[145px] bg-gray-900 z-20 rounded-lg p-4">
+            <div className="relative -mt-[40px] md:-mt-[60px] ml-5 w-full md:min-h-[145px] bg-gray-900 z-20 rounded-lg p-4 flex-1">
                 <div className="flex justify-between items-center">
                     <div className="transition text-lg font-semibold text-slate-300 group-hover:text-blue-500">{title}</div>
                     <div className="flex justify-center items-center gap-1">
