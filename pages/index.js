@@ -42,7 +42,7 @@ export default function Home() {
           animate={{ opacity: 1, translateY: 0, transition: { duration: .25, delay: .45 } }}
           className="md:m-auto text-center max-w-[400px] md:w-[275px] cursor-default max-md:text-left max-md:mx-10"
         >
-          I'm a SWE Intern at Phia and a CS student at Georgia Tech, with hands-on experience in full-stack and mobile development
+          I'm the founder of Vene Health, building AI tools for families navigating care.
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}

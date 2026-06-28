@@ -8,9 +8,23 @@ const ExperienceContainer = () => {
     const experiences = [
         <Experience
             key={0}
+            title="Founder"
+            company="Vene Health"
+            dates="2026 – Present"
+            attachments={[]}
+        >
+            <div className="text-slate-300">
+                Building an AI companion for families and care teams to manage care for aging loved ones.
+            </div>
+            <div className="text-slate-300">
+                Backed by <strong>a16z Speedrun</strong> and <strong>Afore Capital</strong>.
+            </div>
+        </Experience>,
+        <Experience
+            key={1}
             title="Software Engineering Intern"
             company="Phia"
-            dates="Jan. 2026 – Present"
+            dates="Jan. 2026 – Jun. 2026"
             attachments={[]}
         >
             <div className="text-slate-300">
@@ -24,7 +38,7 @@ const ExperienceContainer = () => {
             </div>
         </Experience>,
         <Experience
-            key={1}
+            key={2}
             title="Engineering Manager"
             company="Bits of Good — Hack4Impact Chapter"
             dates="Jan. 2025 – Jan. 2026"
@@ -44,7 +58,7 @@ const ExperienceContainer = () => {
             </div>
         </Experience>,
         <Experience
-            key={2}
+            key={3}
             title="Undergraduate Researcher"
             company="Georgia Institute of Technology"
             dates="Aug. 2024 – Jan. 2026"
@@ -61,7 +75,7 @@ const ExperienceContainer = () => {
             </div>
         </Experience>,
         <Experience
-            key={3}
+            key={4}
             title="Software Developer"
             company="Technique Newspaper"
             dates="Nov. 2024 – Sept. 2025"
@@ -81,7 +95,7 @@ const ExperienceContainer = () => {
         </Experience>
     ];
 
-    const labels = ["Phia", "Bits of Good", "Georgia Tech", "Technique Newspaper"];
+    const labels = ["Vene Health", "Phia", "Bits of Good", "Georgia Tech", "Technique Newspaper"];
 
     return (
         <div className="mt-14 lg:mt-28 flex flex-col lg:flex-row justify-center items-start gap-3">
